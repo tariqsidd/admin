@@ -13,8 +13,8 @@ class UserPage extends Component{
          console.log(this.props.projectNumber , 'Projects2');
          console.log(this.props.accountsNumber , 'Accounts');
 
-        //console.log(this.props.params.id, 'ID')
-        //console.log(this.props, 'params')
+        console.log(this.props.params.id, 'ID')
+        console.log(this.props, 'params')
         console.log(this.props.userProfile)
         let ID = this.props.params.id;
         let ProjectsUrl =  `/Projects/${ID}`;
@@ -36,6 +36,7 @@ class UserPage extends Component{
                     <Link to={CategoriesUrl}><i className="fa fa-th"></i>Categories</Link>
                     <Link to={AccountsUrl}><i className="fa fa-university"></i>Accounts<span className="Counter">{this.props.accountsNumber}</span></Link>
                 </nav>
+                <div><h1>hello</h1></div>
             </div>
         )
     }

@@ -28,3 +28,5 @@ Meteor.publish('accounts', function(id) {
     Counts.publish(this, 'accountsCounter', Accounts.find({owner: id}));
     return Accounts.find({owner: id})
 });
+
+

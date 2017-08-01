@@ -9,7 +9,7 @@ import ProjectsPage from './Projects'
 import Transactions from './Transactions'
 import Categories from './Categories'
 import Account from './Accounts'
-
+import projectEdit from './projectEdit'
 
 
 Meteor.startup(()=>{
@@ -22,6 +22,7 @@ Meteor.startup(()=>{
                     <Route path="Transactions/:id" component={{content: Transactions}} />
                     <Route path="Categories/:id" component={{content: Categories}} />
                     <Route path="Accounts/:id" component={{content: Account}} />
+                    <Route path="Edit/:id" component={{content: projectEdit}} />
 
             </Route>
         </Router>,
