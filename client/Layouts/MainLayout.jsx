@@ -14,10 +14,12 @@ export default class MainLayout extends Component {
                     <AccountUi />
                 </nav>
             </header>
+            <div>
             <main>
                 {this.props.content}
                 {this.props.children}
             </main>
+            </div>
         </div>
     }
 }

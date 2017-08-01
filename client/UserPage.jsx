@@ -36,6 +36,7 @@ class UserPage extends Component{
                     <Link to={CategoriesUrl}><i className="fa fa-th"></i>Categories</Link>
                     <Link to={AccountsUrl}><i className="fa fa-university"></i>Accounts<span className="Counter">{this.props.accountsNumber}</span></Link>
                 </nav>
+                <div><h1>hello</h1></div>
             </div>
         )
     }

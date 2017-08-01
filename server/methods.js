@@ -7,5 +7,9 @@ Meteor.methods({
     },
     deleteProjects(id){
         Projects.remove(id)
+    },
+    updateProject(project){
+        const {_id} = project;
+        return Projects.update(_id, {$set: project});
     }
 });
