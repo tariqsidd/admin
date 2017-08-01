@@ -14,7 +14,7 @@ class UserPage extends Component{
          console.log(this.props.accountsNumber , 'Accounts');
 
         //console.log(this.props.params.id, 'ID')
-        //console.log(this.props, 'params')
+        console.log(this.props, 'params')
         console.log(this.props.userProfile)
         let ID = this.props.params.id;
         let ProjectsUrl =  `/Projects/${ID}`;
